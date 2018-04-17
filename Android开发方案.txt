@@ -6,7 +6,11 @@
 6.检测bug工具：Findbugs工具
 7.检测内存泄漏：AMT
 8.注解框架：黄牛刀
-9.Maven
+9.音视频免费开源框架：https://webrtc.org/
+9.混合开发
+（1）rect native app
+（2）ionic3、codova、Angular4JS
+10.Maven
 （1）支持多类型的recycleview
 compile 'com.multi.support:recyclerview:1.0'
 allprojects {
