@@ -1,0 +1,37 @@
+﻿1.图片框架： Glide
+2.数据库框架：GreenDao
+3.网络框架：RxJava和Retrofit
+4.热修复：Andfix、thinker
+5.设计模式
+6.检测bug工具：Findbugs工具
+7.检测内存泄漏：AMT
+8.注解框架：黄牛刀
+9.Maven
+（1）支持多类型的recycleview
+compile 'com.multi.support:recyclerview:1.0'
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://raw.githubusercontent.com/zhouyunchong/ListAndGridMaven/master";
+        }
+    }
+}
+
+
+注：Maven使用：
+（1）gradle.properties
+aar.path = E:/ListAndGrid
+（2）上传文档配置
+apply plugin: 'maven'
+uploadArchives {
+    repositories.mavenDeployer {
+        def deployPath = file(getProperty('aar.path'))
+        repository(url: "file://${deployPath.absolutePath}")
+        pom.project {
+            groupId "com.multi.support"
+            artifactId "recyclerview"
+            version "1.0"
+        }
+    }
+}
