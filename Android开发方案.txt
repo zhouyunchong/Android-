@@ -5,7 +5,7 @@
 5.设计模式
 6.检测bug工具：Findbugs工具
 7.检测内存泄漏：AMT
-8.Android卡顿分析工具
+8.Android卡顿分析工具：BlockCanary
 9.注解框架：黄牛刀
 10.音视频免费开源框架：https://webrtc.org/
 11.混合开发
